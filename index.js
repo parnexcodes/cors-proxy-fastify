@@ -29,7 +29,7 @@ fastify.get("/proxy", async (request, reply) => {
   if (res.includes("seg")) {
     let seg_proper = res.replaceAll(
       "seg",
-      `https://cors-proxy-fastify.vercel.app/proxy?url=${split1[0]}seg`
+      `https://cors.proxy.consumet.org/${split1[0]}seg`
     );
     return seg_proper;
   }
